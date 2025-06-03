@@ -4,6 +4,8 @@
 
 Understand what makes a password strong by analyzing password complexity and evaluating them using a password strength checker.
 
+---
+
 ## 🛠️ Tasks
 
 1. Create multiple passwords with varying levels of complexity.
@@ -12,7 +14,7 @@ Understand what makes a password strong by analyzing password complexity and eva
 4. Record feedback and security scores for each password.
 5. Identify best practices for strong password creation.
 6. Summarize tips based on evaluations.
-7. Research common password attack methods (brute force, dictionary attacks).
+7. Research common password attack methods.
 8. Analyze how password complexity influences security.
 
 ---
@@ -23,29 +25,23 @@ Understand what makes a password strong by analyzing password complexity and eva
 
 | Password     | Feedback | Screenshot |
 |--------------|----------|------------|
-| `admin@123`  | Very weak – contains a common password, dictionary word, and sequence. | ![admin@123](screenshots/admin@123.png) |
-| `p@ssw0rd`   | Very weak – commonly used password. | ![p@ssw0rd](screenshots/passw0rd.png) |
-| `Lily1234`   | Very weak – includes a name and a common pattern. | ![Lily1234](screenshots/lily1234.png) |
-| `Harley0987` | Very weak – uses a name and common keyboard sequence. | ![Harley0987](screenshots/harley0987.png) |
+| `admin@123`  | Very weak – common word, sequence, and dictionary word. | ![](screenshots/admin@123.png) |
+| `p@ssw0rd`   | Very weak – commonly used password. | ![](screenshots/passw0rd.png) |
+| `Lily1234`   | Very weak – contains a name and simple sequence. | ![](screenshots/lily1234.png) |
+| `Harley0987` | Very weak – name and keyboard pattern. | ![](screenshots/harley0987.png) |
 
 ### ✅ Strong Passwords
 
 | Password                          | Feedback | Screenshot |
 |----------------------------------|----------|------------|
-| `12345@#$qwerKAUSGJF`            | Very strong – described as "as secure as Fort Knox." | ![Strong1](screenshots/strong1.png) |
-| `!@#$%^&*()1234567890QWERTYUIOPqwertyuiop@w$2#` | Extremely strong – described as "as secure as Fort Knox." | ![Strong2](screenshots/strong2.png) |
+| `12345@#$qwerKAUSGJF`            | Very strong – “as secure as Fort Knox.” | ![](screenshots/strong1.png) |
+| `!@#$%^&*()1234567890QWERTYUIOPqwertyuiop@w$2#` | Extremely strong – “as secure as Fort Knox.” | ![](screenshots/strong2.png) |
 
 ---
 
-## 🖼️ Screenshots
+## 🧠 Key Learnings
 
-Screenshots of password evaluations from PasswordMonster.com are included in the `/screenshots` folder for reference.
-
----
-
-## 💡 Key Learnings
-
-### Tips for Creating Strong Passwords
+### 💡 Tips for Creating Strong Passwords
 
 - Use a combination of **uppercase**, **lowercase**, **numbers**, and **symbols**.
 - Avoid **dictionary words**, **names**, or **common patterns**.
@@ -53,16 +49,61 @@ Screenshots of password evaluations from PasswordMonster.com are included in the
 - Do not reuse passwords across multiple sites.
 - Avoid **keyboard patterns** (e.g., `123456`, `qwerty`).
 
-### Password Attack Summary
+---
 
-- **Brute Force Attack**: Tries every possible combination. Long, complex passwords take exponentially longer to crack.
-- **Dictionary Attack**: Uses precompiled lists of common words and variations. Avoid using recognizable words to stay protected.
+## ⚔️ Common Password Cracking Methods
+
+### 1. **Brute Force Attack**
+Tries all possible combinations until the correct password is found. Time-consuming but effective without rate limits.
+
+### 2. **Dictionary Attack**
+Uses a list of common words and phrases to guess passwords. Faster than brute force but less exhaustive.
+
+### 3. **Rainbow Table Attack**
+Matches precomputed password hashes against stolen hash data. Defeated by hashing with unique **salts**.
+
+### 4. **Credential Stuffing**
+Attempts previously leaked username-password combinations on new websites. Exploits password reuse.
+
+### 5. **Phishing**
+Tricks users into entering credentials on fake websites or forms. Doesn’t rely on guessing or cracking — just deception.
+
+### 6. **Keylogging**
+Records keystrokes using malware to capture passwords directly as they’re typed.
+
+### 7. **Shoulder Surfing**
+Visually observing someone typing a password, especially in public places.
+
+### 8. **Guessing / Social Engineering**
+Exploits personal details like names, birthdays, or favorite things to guess passwords.
+
+### 9. **Hybrid Attack**
+Combines dictionary and brute-force techniques — e.g., tries “password123” or “admin@2024”.
+
+### 10. **Man-in-the-Middle (MitM) Attack**
+Intercepts network traffic to steal login credentials during transmission, especially on unsecured networks.
 
 ---
 
-## 🧪 Tools Used
+## 🔐 How Complexity Helps
+
+Strong passwords — long, unique, and random — dramatically reduce the success rate of all the above methods. Complexity:
+- Increases brute force difficulty exponentially.
+- Defeats dictionary-based guessing.
+- Avoids easy-to-guess personal or reused data.
+- Resists automated attacks that rely on patterns or repetition.
+
+---
+
+## 🧪 Tool Used
 
 - [PasswordMonster.com](https://www.passwordmonster.com/)
+
+---
+
+## 🖼️ Screenshots
+
+All password strength evaluation screenshots are stored in the `/screenshots` folder.
 
 ---
 
