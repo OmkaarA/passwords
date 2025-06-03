@@ -23,7 +23,7 @@ Understand what makes a password strong by analyzing password complexity and eva
 
 | Password     | Feedback | Screenshot |
 |--------------|----------|------------|
-| `admin@123`  | Very weak – contains a common password, dictionary word, and sequence. | ![admin@123](screenshots/admin123.png) |
+| `admin@123`  | Very weak – contains a common password, dictionary word, and sequence. | ![admin@123](screenshots/admin@123.png) |
 | `p@ssw0rd`   | Very weak – commonly used password. | ![p@ssw0rd](screenshots/passw0rd.png) |
 | `Lily1234`   | Very weak – includes a name and a common pattern. | ![Lily1234](screenshots/lily1234.png) |
 | `Harley0987` | Very weak – uses a name and common keyboard sequence. | ![Harley0987](screenshots/harley0987.png) |
